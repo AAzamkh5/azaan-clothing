@@ -6,9 +6,8 @@ const FormInput = ({handleChange,label, ...otherProps}) => (
      <input className="form-input" onChange={handleChange} {...otherProps} />
      {
          label?
-         (<label className={`${otherProps.value.length ? 'shirk' : ''}form-input-label`} 
-         >
-         {label}
+         (<label className={`${otherProps.value.length ? 'shirk' : ''}form-input-label`}>{label} 
+         
          </label>):null
      }
  </div>   
@@ -16,4 +15,3 @@ const FormInput = ({handleChange,label, ...otherProps}) => (
 )
 export default FormInput;
 
-// measurementId: "G-M79CZH2VTG"
